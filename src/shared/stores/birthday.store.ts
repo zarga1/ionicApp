@@ -1,10 +1,9 @@
 import { observable, action, computed } from 'mobx-angular';
 import { Injectable } from "@angular/core";
-import { Birthday } from '../models/birthday';
 import { UUID } from 'angular2-uuid';
-
-import { BirthdayService } from './../services/birthday.service';
 import * as mobx from 'mobx';
+import { Birthday } from '../models/birthday';
+import { BirthdayService } from '../services/birthday.service';
 
 @Injectable()
 export class BirthdayStore {

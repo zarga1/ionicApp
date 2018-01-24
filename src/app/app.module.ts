@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
+import { ErrorHandler, NgModule, APP_INITIALIZER } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -9,10 +9,17 @@ import { HomePage } from '../pages/home/home';
 import { DetailsPage } from './../pages/details/details';
 
 import { MobxAngularModule } from 'mobx-angular';
-import { BirthdayStore } from '../stores/birthday.store';
 
-import { BirthdayService } from './../services/birthday.service';
 import { IonicStorageModule } from "@ionic/storage";
+import { HttpServiceModule } from '../shared/http/index';
+import { BirthdayStore } from '../shared/stores/birthday.store';
+import { BirthdayService } from '../shared/services/birthday.service';
+import { ConfigService } from '../shared/services/app-config.service';
+import { HttpModule } from '@angular/http';
+
+export function configServiceFactory (config: ConfigService) {
+  return () => config.load()
+}
 
 @NgModule({
   declarations: [
@@ -22,6 +29,8 @@ import { IonicStorageModule } from "@ionic/storage";
   ],
   imports: [
     BrowserModule,
+    HttpModule,
+    HttpServiceModule.forRoot(),
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     MobxAngularModule,
@@ -36,6 +45,13 @@ import { IonicStorageModule } from "@ionic/storage";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    {
+      provide: APP_INITIALIZER,
+      useFactory: configServiceFactory,
+      deps: [ConfigService], 
+      multi: true
+    },
+    ConfigService,
     BirthdayStore,
     BirthdayService
   ]

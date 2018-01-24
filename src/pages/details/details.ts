@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ViewController } from 'ionic-angular';
-import { Birthday } from '../../models/birthday';
-import { BirthdayStore } from '../../stores/birthday.store';
+import { Birthday } from '../../shared/models/birthday';
+import { BirthdayStore } from '../../shared/stores/birthday.store';
 
 @Component({
     selector: 'page-details',

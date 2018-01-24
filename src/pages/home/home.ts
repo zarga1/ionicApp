@@ -1,9 +1,9 @@
 import { Component, ChangeDetectionStrategy } from "@angular/core";  
 import { ModalController, NavController } from 'ionic-angular';  
 
-import { Birthday } from '../../models/birthday';  
-import { BirthdayStore } from '../../stores/birthday.store';
 import { DetailsPage } from '../details/details';  
+import { BirthdayStore } from "../../shared/stores/birthday.store";
+import { Birthday } from "../../shared/models/birthday";
 
 @Component({
   selector: 'page-home',
