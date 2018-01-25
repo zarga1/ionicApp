@@ -1,15 +1,49 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      🎂 Birthdays 🎉
-    </ion-title>
-    <ion-buttons end>
-      <button ion-button (click)="showDetail()">
-          <ion-icon name="add"></ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-navbar>
-</ion-header>
+        <ion-navbar>
+          <ion-title>
+            🎂 Birthdays 🎉
+          </ion-title>
+          <ion-buttons end>
+            <button ion-button (click)="showDetail()">
+                <ion-icon name="add"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-navbar>
+      </ion-header>
+<ion-content class="container">
+    <div>
+        <div class="custom-header">
+            <div class="menu-icon"></div>
+            <img class="profile-image" src="assets/images/profile.png" />
+            <div class="profile-name">
+                Jennifer Wilson
+            </div>
+            <div class="profile-job">
+                UI/UX Designer
+            </div>
+            <div class="header-motif"></div>
+        </div>
+        <div class="rem-tasks">
+            <div class="rem-tasks-number">12</div>
+            <div class="rem-tasks-title">remaining tasks</div>
+        </div>
+        <div class="add-task">
+            <div class="add-icon"></div>
+        </div>
+        <div class="completed-tasks">
+            <div class="completed-tasks-number">32</div>
+            <div class="completed-tasks-title">completed tasks</div>
+        </div>
+        <input type="email" class="email"/>
+        <input type="password" class="password"/>
+        <button class="login-button">
+            <span class="login-text">LOGIN</span>
+        </button>
+        <span class="create-account">CREATE NEW ACCOUNT</span>
+    </div>
+</ion-content>
+
+<!--
 
 <ion-content class="home" *mobxAutorun>
   <ion-item-group>
@@ -29,4 +63,4 @@
         <div item-end>{{ birthday.date | date:'yMMMMd' }}</div>
     </button>
   </ion-item-group>
-</ion-content>
+</ion-content> -->

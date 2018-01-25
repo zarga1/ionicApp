@@ -1,5 +1,6 @@
 {
   "api": {
-    "baseUrl": "http://apa.netmedia.hr/api"
+    "baseUrl": "https://api.themoviedb.org/3/",
+    "API_KEY": "c772b1a50b811405ac4c30d9ac44719e"
   }
 }

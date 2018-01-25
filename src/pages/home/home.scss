@@ -1,3 +1,214 @@
-page-home {
+@import url('https://fonts.googleapis.com/css?family=Roboto:100');
 
+.container {
+    background-image: url('../../assets/images/background.png');
+    width: 1080px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.custom-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1080px;
+    height: 712px;
+    background-color: #3f4996;
+}
+.header-motif {
+    position: absolute;
+    top: 0;
+    left: 554px;
+    width: 525px;
+    height: 711px;
+    background-image: url('../../assets/images/header-motif.png')
+}
+.profile-image {
+    position: absolute;
+    top: 300px;
+    left: 61px;
+    width: 280px;
+    height: 280px;
+}
+.profile-name {
+    position: absolute;
+    top: 378px;
+    left: 403px;
+    width: 481px;
+    height: 56px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 56px;
+    z-index: 999;
+}
+.profile-job {
+    position: absolute;
+    top: 470px;
+    left: 404px;
+    width: 242px;
+    height: 34px;
+    color: #68d3ff;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 56px;
+    z-index: 999;
+}
+.menu-icon {
+    position: absolute;
+    top: 136px;
+    left: 60px;
+    width: 54px;
+    height: 36px;
+    background-image: url('../../assets/images/menu-icon.png')
+}
+.rem-tasks {
+    position: absolute;
+    top: 712px;
+    left: 0;
+    width: 540px;
+    height: 340px;
+    background-color: #4dc2ff;
+}
+.completed-tasks {
+    position: absolute;
+    top: 712px;
+    left: 540px;
+    width: 540px;
+    height: 340px;
+    background-color: #ff7fe5;
+}
+.rem-tasks-number {
+    position: absolute;
+    top: 101px;
+    left: 221px;
+    width: 125px;
+    height: 72px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 56px;
+}
+.rem-tasks-title {
+    position: absolute;
+    top: 205px;
+    left: 145px;
+    width: 251px;
+    height: 35px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 56px;
+}
+.completed-tasks-number {
+    position: absolute;
+    top: 101px;
+    left: 223px;
+    width: 125px;
+    height: 73px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 56px;
+}
+.completed-tasks-title {
+    position: absolute;
+    top: 205px;
+    left: 143px;
+    width: 263px;
+    height: 35px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 56px;
+}
+.add-task {
+    position: absolute;
+    top: 622px;
+    left: 450px;
+    width: 200px;
+    height: 200px;
+    background-image: url('../../assets/images/ellipse.png');
+    z-index: 999;
+}
+.add-icon {
+    background-image: url('../../assets/images/add-icon.png');
+    position: absolute;
+    top: 71px;
+    left: 84px;
+    width: 46px;
+    height: 46px;
+}
+.email {
+    position: absolute;
+    top: 1150px;
+    left: 126px;
+    width: 828px;
+    height: 70px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 56px;
+    border: 0;
+    color: white;
+    border-bottom: 2px solid rgba(255,255,255,.4);
+    background: transparent;
+}
+.password { 
+    position: absolute;
+    top: 1300px;
+    left: 126px;
+    width: 828px;
+    height: 75px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 56px;
+    border: 0;
+    color: white;
+    border-bottom: 2px solid rgba(255,255,255,.4);
+    background: transparent;
+}
+.login-button {
+    position: absolute;
+    top: 1480px;
+    left: 126px;
+    width: 828px;
+    height: 160px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    background-color: #4bc2ff;
+    border: 0;
+}
+.login-text {
+    position: absolute;
+    top: 62px;
+    left: 348px;
+    width: 137px;
+    height: 36px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+.create-account {
+    position: absolute;
+    top: 1680px;
+    left: 378px;
+    width: 324px;
+    height: 23px;
+    opacity: 0.6;
+    color: white;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 56px;
+    text-transform: uppercase;
 }
